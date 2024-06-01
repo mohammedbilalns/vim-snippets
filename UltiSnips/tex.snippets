@@ -167,7 +167,9 @@ snippet '([A-Za-z])(\d)' "auto subscript" wrA
 endsnippet
 
 snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
-`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+`!p snip.rv = match.gsnippet DD "D" w
+\mathbb{D}
+endsnippetroup(1)`_{`!p snip.rv = match.group(2)`}
 endsnippet
 
 snippet sr "^2" iA
@@ -288,14 +290,37 @@ snippet nnn "bigcap" w
 \bigcap_{${1:i \in ${2: I}}} $0
 endsnippet
 
-snippet HH "H" w
+snippet rr "R" w
+\mathbb{R}
+endsnippet
+
+snippet qq "Q" W
+\mathbb{Q}
+endsnippet
+
+snippet cc "C" W
+\mathbb{C}
+endsnippet
+
+snippet hh "H" w
 \mathbb{H}
 endsnippet
 
-snippet DD "D" w
+snippet nn "N" w 
+\mathbb{N}
+endsnippet
+
+snippet zz "Z" w 
+\mathbb{Z}
+endsnippet
+
+snippet dd "D" w
 \mathbb{D}
 endsnippet
 
+snippet bar "bar" w 
+\overline{$1}
+endsnippet
 
 ###############
 # ENVIRONMENT #
@@ -463,25 +488,11 @@ snippet nn "cap" w
 \cap 
 endsnippet
 
-snippet uu "cup" w
-\cup 
-endsnippet
 
-snippet uuu "bigcup" w
-\bigcup_{${1:i \in ${2: I}}} $0
-endsnippet
 
-snippet nnn "bigcap" w
-\bigcap_{${1:i \in ${2: I}}} $0
-endsnippet
 
-snippet HH "H" w
-\mathbb{H}
-endsnippet
 
-snippet DD "D" w
-\mathbb{D}
-endsnippet
+
 snippet "pmat" "Pmat" w
 \begin{pmatrix} $1 \end{pmatrix} $0
 endsnippet
