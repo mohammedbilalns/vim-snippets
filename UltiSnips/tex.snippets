@@ -511,8 +511,10 @@ snippet conj "conjugate" w
 endsnippet
 
 snippet sum "sum" w
-\sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}
+\displaystyle\sum $0
 endsnippet
+snippet sumwl "sum with limit" w 
+\displaystyle\sum_{$1}^{$2}$0
 
 snippet taylor "taylor" w
 \sum_{${1:k}=${2:0}}^{${3:\infty}} ${4:c_$1} (x-a)^$1 $0
