@@ -25,10 +25,25 @@ def printf_expand_args(snip):
 
 endglobal
 
+
 # ==============
 # Snippets 
 # ==============
+
 priority -50
+
+snippet patterbp "Pattern boilerPlate"
+#include <stdio.h>
+int main()
+{
+	int i, j, lineCount, k = 0, p;
+	printf("Enter the number of lines: ");
+	scanf("%d", &lineCount);
+
+	$0
+
+}
+endsnippet 
 
 snippet def "#define ..."
 #define $1
@@ -56,7 +71,7 @@ $0
 endsnippet
 
 snippet main "main() (main)"
-int main(int argc, char *argv[])
+int main()
 {
 	${VISUAL}$0
 	return 0;
